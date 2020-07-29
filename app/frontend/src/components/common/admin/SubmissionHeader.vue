@@ -25,21 +25,13 @@
       Confirmation ID:
       <span>{{ submissionId.split('-')[0].toUpperCase() }}</span>
     </h4>
-    <h4 v-if="operationType" class="heading-detail">
-      Operation Type:
-      <span>{{ operationType }}</span>
-    </h4>
-    <h4 class="heading-detail">
-      Operation Dates:
-      <span>{{ locationDateDisplay(location.startDate) }} - {{ locationDateDisplay(location.endDate) }}</span>
-    </h4>
   </v-container>
 </template>
 
 <script>
 import moment from 'moment';
 
-import DeleteButton from '@/components/common/admin/inspection/DeleteButton.vue';
+import DeleteButton from '@/components/common/admin/workflow/DeleteButton.vue';
 import GeneratePdfButton from '@/components/common/GeneratePdfButton.vue';
 
 export default {
@@ -49,25 +41,13 @@ export default {
     GeneratePdfButton
   },
   props: {
-    attestation: {
-      type: Object,
-      required: true
-    },
-    business: {
+    formOneData: {
       type: Object,
       required: true
     },
     formName: {
       type: String,
       required: true
-    },
-    location: {
-      type: Object,
-      required: true
-    },
-    operationType: {
-      type: String,
-      required: false
     },
     submissionId: {
       type: String,
@@ -76,15 +56,12 @@ export default {
   },
   computed: {
     createdAtDisplay() {
-      return this.attestation && this.attestation.createdAt
-        ? moment(this.attestation.createdAt).format('MMMM D YYYY, h:mm:ss a')
+      return this.formOneData && this.formOneData.createdAt
+        ? moment(this.formOneData.createdAt).format('MMMM D YYYY, h:mm:ss a')
         : 'N/A';
     }
   },
   methods: {
-    locationDateDisplay(ldate) {
-      return ldate ? moment(ldate).format('MMMM D YYYY') : 'N/A';
-    }
   }
 };
 </script>

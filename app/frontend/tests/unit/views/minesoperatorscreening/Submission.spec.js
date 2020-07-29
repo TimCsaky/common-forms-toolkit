@@ -43,7 +43,7 @@ describe('Submission.vue', () => {
       stubs: [
         'AdminReviewSubmission',
         'BaseSecure',
-        'InspectionPanel',
+        'WorkflowPanel',
         'NotesPanel',
         'SubmissionHeader'
       ]

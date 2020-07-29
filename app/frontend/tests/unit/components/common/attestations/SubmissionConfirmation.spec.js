@@ -12,7 +12,7 @@ describe('SubmissionConfirmation.vue', () => {
   const { location } = window;
   const mockReload = jest.fn();
 
-  const formName = FormNames.AGRISEAFOODOPSCREENING;
+  const formName = FormNames.FORMONE;
   const completedSubmission = {
     confirmationId: '3A9E24B9',
     contacts: [{ email: 'test@test.com' }],

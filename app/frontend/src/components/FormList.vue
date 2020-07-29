@@ -15,7 +15,7 @@
                   <div>
                     <router-link class="pr-2" :to="{ name: form.linkName }">
                       <v-btn color="primary">
-                        <span>VIEW</span>
+                        <span>VIEW {{ form.linkName }}</span>
                       </v-btn>
                     </router-link>
                     <router-link
@@ -52,27 +52,11 @@ export default {
     forms: [
       {
         enabled: true,
-        linkAdminName: 'AgriSeafoodOpScreeningAdmin',
-        linkName: 'AgriSeafoodOpScreeningForm',
-        resource: AppClients.AGRISEAFOODOPSCREENING,
+        linkAdminName: 'FormOneAdmin',
+        linkName: 'FormOneForm',
+        resource: AppClients.FORMONE,
         roles: [AppRoles.VIEWER],
-        title: 'Agriculture and Seafood Operator Screening'
-      },
-      {
-        enabled: true,
-        linkAdminName: 'ForestrySectorOpScreeningAdmin',
-        linkName: 'ForestrySectorOpScreeningForm',
-        resource: AppClients.FORESTRYSECTOROPSCREENING,
-        roles: [AppRoles.VIEWER],
-        title: 'Forestry Sector Operator Screening'
-      },
-      {
-        enabled: true,
-        linkAdminName: 'MinesOperatorScreeningAdmin',
-        linkName: 'MinesOperatorScreeningForm',
-        resource: AppClients.MINESOPERATORSCREENING,
-        roles: [AppRoles.VIEWER],
-        title: 'Mines Operator Screening'
+        title: 'Form One'
       }
     ],
     moduleLoaded: true

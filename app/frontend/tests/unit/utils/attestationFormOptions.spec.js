@@ -6,7 +6,7 @@ describe('Attestation Form Options', () => {
     it('contains all 3 forms', () => {
       expect(attestationFormOptions.Options).toBeTruthy();
       expect(Object.keys(attestationFormOptions.Options).length).toBe(3);
-      expect(attestationFormOptions.Options[constants.FormNames.AGRISEAFOODOPSCREENING]).toBeTruthy();
+      expect(attestationFormOptions.Options[constants.FormNames.FORMONE]).toBeTruthy();
       expect(attestationFormOptions.Options[constants.FormNames.FORESTRYSECTOROPSCREENING]).toBeTruthy();
       expect(attestationFormOptions.Options[constants.FormNames.MINESOPERATORSCREENING]).toBeTruthy();
       expect(attestationFormOptions.Options['xxx']).toBeUndefined();
@@ -15,8 +15,8 @@ describe('Attestation Form Options', () => {
 
   describe('getFormOptions', () => {
     it('returns an object when a correct form name is passed in', () => {
-      expect(attestationFormOptions.getFormOptions(constants.FormNames.AGRISEAFOODOPSCREENING)).toBeTruthy();
-      expect(attestationFormOptions.getFormOptions(constants.FormNames.AGRISEAFOODOPSCREENING)).toBeInstanceOf(Object);
+      expect(attestationFormOptions.getFormOptions(constants.FormNames.FORMONE)).toBeTruthy();
+      expect(attestationFormOptions.getFormOptions(constants.FormNames.FORMONE)).toBeInstanceOf(Object);
     });
   });
 });

@@ -28,7 +28,7 @@ describe('FormList.vue', () => {
 
     const wrapper = shallowMount(FormList, { localVue, store, stubs: ['BaseActionCard'] });
 
-    expect(wrapper.text()).toMatch('Agriculture and Seafood Operator Screening');
+    expect(wrapper.text()).toMatch('Form One');
     // expect(wrapper.text()).toMatch('Forestry Sector Operator Screening');
     expect(wrapper.text()).toMatch('Mines Operator Screening');
     expect(wrapper.vm.forms).toHaveLength(3);

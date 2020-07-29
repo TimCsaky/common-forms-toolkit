@@ -12,13 +12,24 @@ $bcgov-grey: #efefef;
 $bcgov-font: #313132;
 
 // Sticky Footer
-body {
+
+html, body {
+  height: 100%;
+}
+
+.v-application--wrap {
   display: flex;
   flex-direction: column;
-  & > .v-content {
+  v-main {
     flex: 1 0 auto;
   }
+  footer {
+    flex-shrink: 0;
+  }
+
+
 }
+
 
 // Typography
 .v-application {

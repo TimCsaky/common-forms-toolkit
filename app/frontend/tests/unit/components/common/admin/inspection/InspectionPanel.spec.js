@@ -2,7 +2,7 @@ import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
 
-import InspectionPanel from '@/components/common/admin/inspection/InspectionPanel.vue';
+import WorkflowPanel from '@/components/common/admin/inspection/WorkflowPanel.vue';
 import commonFormService from '@/services/commonFormService';
 import { FormNames } from '@/utils/constants';
 
@@ -10,7 +10,7 @@ const localVue = createLocalVue();
 localVue.use(Vuex);
 localVue.use(Vuetify);
 
-describe('InspectionPanel.vue', () => {
+describe('WorkflowPanel.vue', () => {
   const date = new Date();
   const formName = FormNames.MINESOPERATORSCREENING;
   const zeroUuid = '00000000-0000-0000-0000-000000000000';
@@ -47,7 +47,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -72,7 +72,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -97,7 +97,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -122,7 +122,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -150,7 +150,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -181,7 +181,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -211,7 +211,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -240,7 +240,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -277,7 +277,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -313,7 +313,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,
@@ -352,7 +352,7 @@ describe('InspectionPanel.vue', () => {
       }
     });
 
-    const wrapper = shallowMount(InspectionPanel, {
+    const wrapper = shallowMount(WorkflowPanel, {
       localVue,
       propsData: {
         formName: formName,

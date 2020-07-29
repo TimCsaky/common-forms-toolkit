@@ -5,7 +5,7 @@ describe('Constants', () => {
     it('is defined correctly', () => {
       expect(constants.FormNames).toBeTruthy();
       expect(constants.FormNames).toMatchObject({
-        AGRISEAFOODOPSCREENING: 'agriseafoodopscreening',
+        FORMONE: 'agriseafoodopscreening',
         FORESTRYSECTOROPSCREENING: 'forestrysectoropscreening',
         MINESOPERATORSCREENING: 'minesoperatorscreening'
       });
@@ -16,7 +16,7 @@ describe('Constants', () => {
     it('is defined correctly', () => {
       expect(constants.ApiRoutes).toBeTruthy();
       expect(constants.ApiRoutes).toMatchObject({
-        AGRISEAFOODOPSCREENING: '/agriseafoodopscreening',
+        FORMONE: '/agriseafoodopscreening',
         FORESTRYSECTOROPSCREENING: '/forestrysectoropscreening',
         MINESOPERATORSCREENING: '/minesoperatorscreening'
       });

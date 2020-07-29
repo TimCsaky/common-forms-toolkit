@@ -1,7 +1,7 @@
 import routes from '@/router/agriSeafoodOpScreening';
 
 const baseName = 'AgriSeafoodOpScreening';
-const baseTitle = 'Agriculture and Seafood Operator Screening';
+const baseTitle = 'Form One';
 
 describe(`Routes > ${baseName}`, () => {
   it('has the correct number of routes', () => {
